@@ -1,0 +1,579 @@
+﻿<html>
+   <head>
+	   <meta charset="utf-8">
+	   <style>
+		   *{
+			   padding: 0;
+			   margin: 0;
+		   }
+		   body{
+			   background:#E2DFDF;
+		   }
+		   	.avatar:hover div{
+			transform:scale(1.4);
+			transition: all 3s;
+			-webkit-transform:scale(1.4);
+		}
+		   nav{
+			   width: 100%;
+			   height: 90px;
+			   background: #000000;
+			   color: #D1CECE;
+			   position: fixed;
+			   z-index: 999;
+		   }
+		   nav ul li{
+			   float: left;
+			   list-style: none;
+			   margin-left: 20px;
+		   }
+		   input{
+			   border: 1px solid #FFFCFC;
+			   background: #4F4E4E;
+			   height: 35px;
+			   width: 320px;
+			   margin-top: -15px;
+			   float: left;
+			   color: #fff;
+			   margin-left: 380px;
+		   }
+		   .span{
+			   width: 34px;
+			   height: 33px;
+			   background: #938B8B;
+			   float: left;
+			   margin-top:-15px;
+			   border: 1px solid #fffcfc;
+		   }
+		   .span img{
+			   width: 30px;
+			   height:30px;
+		   }
+		   .H1{
+			   font-size: 28px;
+			   font-style: italic;
+			   margin-left: 70px;
+		   }
+		   .H1 img{
+			   position: absolute;
+			   width: 230px;
+			   height: 90px;
+			   left: 40px;
+		   }
+		   section{
+			   background: #000000;
+			   width: 100%;
+			   height: 370px;
+			   color: #fff;
+			   z-index: 1;
+		   }
+		   section p{
+			   position: absolute;
+			   font-size: 45px;
+			   top: 100px;
+			   margin-left: 140px;
+		   }
+		   section h4{
+			   position: absolute;
+			   top: 180px;
+			   margin-left: 140px;
+			   line-height: 25px;
+		   }
+		   .caidan{
+			  position: absolute;
+			   left: 80%;
+			   top: 5px;
+		   }
+		   .menu{
+			   position: absolute;
+			   left: 75%;
+		   }
+		   .menu li{
+			   display: block;
+			   font-size: 18px;
+			   margin-left: 58px;
+		   }
+		   L1 li{
+			   float: left;
+		   }
+		   .DM{
+			   width: 800px;
+			   height: 440px;
+			   background:#2F2D2D;
+			   display: block;
+			   position: absolute;
+			   left: -450px;
+			   display: none;
+		   }
+		   .DM img{
+			   width: 100px;
+			   height: 120px;
+			   margin-top: 12px;
+		   }
+		   .DM li{
+			   float: left;
+		   }
+		   .MH{
+			   width: 800px;
+			   height: 440px;
+			   background:#2F2D2D;
+			   display: block;
+			   position: absolute;
+			   left: -450px;
+			   display: none;
+			   color: #000;
+		   }
+		    .MH img{
+			   width: 120px;
+			   height: 140px;
+		   }
+		   .MH li{
+			   float: left;
+			   width: 120px;
+			   height: 180px;
+			   margin-top: 32px;
+			   background: #fff;
+			   display: block;
+			   font-size: 6px;
+		   }
+		   .a1:hover{
+			   background: #EC8F32;
+		   }
+		   .a2:hover{
+			   background: #EC8F32;
+		   }
+		   .a3:hover{
+			   background: #EC8F32;
+		   }
+		   .a4:hover{
+			   background: #EC8F32;
+		   }
+		   .a5:hover{
+			   background: #EC8F32;
+		   }
+		   .a6:hover{
+			   background: #EC8F32;
+		   }
+		   .a7:hover{
+			   background: #EC8F32;
+		   }
+		   .a8:hover{
+			   background: #EC8F32;
+		   }
+		   .MH li p{
+			   text-align: center;
+		   }
+		   .DY{
+			   width: 800px;
+			   height: 440px;
+			   background:#2F2D2D;
+			   display: block;
+			   position: absolute;
+			   left: -450px;
+			   display: none;
+		   }
+		   .DY img{
+			   width: 120px;
+			   height: 170px;
+		   }
+		   .DY li{
+			   float: left;
+			   width: 120px;
+			   height: 180px;
+			   margin-top: 32px;
+			   background: #fff;
+			   display: block;
+			   font-size: 6px;
+		   }
+		   .L1:hover div{
+			   display: block;
+		   }
+		   .L1:hover{
+			   color: #66BE3A;
+		   }
+		   footer{
+			   width: 100%;
+			   height: 150px;
+			   background:#090808;
+			   color: #fff;
+			   margin-top: 300px;
+			   float: left;
+		   }
+		   .wenzhang{
+			   width: 300px;
+			   height: 700px;
+			   margin-top: 30px;
+			   margin-left: 100px;
+			   float: left;
+		   }
+		   .head{
+			   width: 100%;
+			   height: 50px;
+			   background: #000000;
+			   color: #fff;
+		   }
+		   .head h3{
+			   margin-top: 0px;
+			   margin-left: 10px;
+		   }
+		   .D1{
+			   color: #000000;
+			   background: #fff;
+			   width: 100%;
+		   }
+		   .D1 img{
+			   width: 100%;
+		   }
+		   .D1 h4{
+			   margin-left: 6px;
+			   color: #000;
+			   height: 60px;
+		   }
+		   .D1 a{
+			   text-decoration: none;
+		   }
+		   .D1:hover{
+			   background: #F59F36;
+		   }
+		   .shake{
+            -webkit-animation-name: shake_box;
+            -ms-animation-name: shake_box;
+            animation-name: shake_box;
+            -webkit-animation-duration: 1000ms;
+            -ms-animation-duration: 1000ms;
+            animation-duration: 1000ms;
+            -webkit-animation-timing-function: ease-in-out;
+            -ms-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-delay: 0s;
+            -ms-animation-delay: 0s;
+            animation-delay: 0s;
+            /*-webkit-animation-play-state: running;
+            -ms-animation-play-state: running;
+            animation-play-state: running;*/
+        }
+        .shake:hover{
+            -webkit-animation-iteration-count: infinite;
+            -ms-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            /*-webkit-animation-play-state: paused;
+            -ms-animation-play-state: paused;
+            animation-play-state: paused;*/
+        }
+        @keyframes shake_box{
+            0% {transform: translate(0px, 0px) rotate(0deg)}
+            20% {transform: translate(1.5px, -2.5px) rotate(-1.5deg)}
+            40% {transform: translate(-2.5px, 0.5px) rotate(-0.5deg)}
+        }
+        @-ms-keyframes shake_box{
+            0% {-ms-transform: translate(0px, 0px) rotate(0deg)}
+            20% {-ms-transform: translate(1.5px, -2.5px) rotate(-1.5deg)}
+            40% {transform: translate(-2.5px, 0.5px) rotate(-0.5deg)}
+        }
+		   .BG1{
+			   width: 350px;
+			   height: 340px;
+			   margin-top: 50px;
+			   margin-left: 900px;
+		   }
+		   .IMG{
+			   background: #0C0B0B;
+			   float: left;
+			   width: 850px;
+			   height: 280px;
+			   margin-left: 50px;
+			   margin-top: 30px;
+		   }
+		   .IMG img{
+			   width: 75%;
+			   height: 100%;
+			   margin-left: 230px;
+		   }
+		   .IMG h1{
+			   position: absolute;
+			   color: #fff;
+			   font-size: 120px;
+			   margin-left: 10px;
+			   margin-top: 20px;
+		   }
+		   .IMG h2{
+			   color: #fff;
+			   font-size: 50px;
+			   position: absolute;
+			   margin-top: 200px;
+			   margin-left: 20px;
+		   }
+		   .blibli{
+			   background:#fff;
+			   width: 270px;
+			   height: 300px;
+			   float: left;
+			   margin-left: 50px;
+			   margin-top: 30px;
+			   
+		   }
+		   .blibli img{
+			   height: 80px;
+			   width: 100%;
+		   }
+		   .blibli h4{
+			   margin-top: 20px;
+			   margin-left: 45px;
+		   }
+		   .jrtt{
+			   background: #fff;
+			   width: 270px;
+			   height: 300px;
+			   float: left;
+			   margin-left: 20px;
+			   margin-top: 30px;
+			   
+		   }
+		   .jrtt img{
+			   height: 80px;
+			   width: 100%;
+		   }
+		   .jrtt h4{
+			   margin-top: 20px;
+			   margin-left: 75px;
+		   }
+		   .weixin{
+			   background: #fff;
+			   width: 270px;
+			   height: 300px;
+			   float: left;
+			   margin-left: 20px;
+			   margin-top: 30px;
+			   
+		   }
+		   .weixin img{
+			   height: 80px;
+			   width: 100%;
+		   }
+		     .txkfpt{
+			   background: #fff;
+			   width: 270px;
+			   height: 300px;
+			   float: left;
+			   margin-left: 20px;
+			   margin-top: 30px;
+			   
+		   }
+		   .txkfpt img{
+			   height: 80px;
+			   width: 100%;
+		   }
+		   .txkfpt h4{
+			   margin-top: 20px;
+			   margin-left: 90px;
+		   }
+		   .famkui{
+			   width: 560px;
+			   height: 420px;
+			   background: #000;
+			   float: left;
+			   margin-left: 50px;
+			   margin-top: 30px;
+			   color: #fff;
+		   }
+		   .famkui img{
+			   width: 184px;
+			   height: 120px;
+			   border: 1px solid #fff;
+		   }
+		   .famkui div{
+			   float: left;
+		   }
+		   .anav{
+			   width: 100%;
+			   height: 50px;
+			   background: #000;
+			   color: #fff;
+		   }
+		   .conter img{
+			   width: 80px;
+			   height: 80px;
+			   border-radius: 40px;
+			   margin-left: 90px;
+			   margin-top: 20px;
+		   }
+		   .poin{
+			   width: 270px;
+			   height:300px;
+			   background: url(images/ma.png);
+			   display: block;
+		   }
+		   .poin{
+			   display: none;
+		   }
+		   .txkfpt:hover img{
+			   display: none;
+		   }
+		   .txkfpt:hover div{
+			   display: block;
+		   }
+		   .Emali{
+			   width: 270px;
+			   height: 100px;
+			   background: #192682;
+			   float: left;
+			   margin-left: 20px;
+			   margin-top: 20px;
+			   color: #fff;
+		   }
+		   .Emali a{
+			   font-size: 30px;
+			   margin-left: 70px;
+			   display: block;
+		   }
+		   .Emali img{
+			   position: absolute;
+			   width: 100px;
+			   height: 76px;
+			   margin-top: 27px;
+			   margin-left: -110px;
+		   }
+		   .Emali:hover a{
+			   color: #F87E2E;
+		   }
+	   </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	   <title>Sunday 电影社</title>
+   </head>
+	<body>
+	    <nav>
+			 <a class="H1">Sunday 电影社<img src="images/logo.png"></a>
+			<div><input type="search" value="Seach"><a class="span"><img src="images/sech.png"></a></div>
+			
+			<div class="caidan">
+			  <ul>
+				 <li>登陆</li>
+				 <li>注册账号</li>
+				 <li>位置：</li>
+			  </ul>
+			</div>
+			<div class="menu">
+			    <ul>
+					<li class="L1">动漫<div class="DM">
+						</div></li>
+				 <li class=L1>漫画<div class="MH">
+					    <ul>
+						   <li class="a1"><img src="images/buyi.png"><p>不义联盟 人间之神</p></li>
+						   <li class="a2"><img src="images/congshen.png"><p>DC重生</p></li>
+						   <li class="a3"><img src="images/bianfu.png"><p>新52 蝙蝠侠</p></li>
+						   <li class="a4"><img src="images/dark.png"><p>黑暗之夜—金属 上</p></li>
+							<li class="a5"><img src="images/zhenlian.png"><p>新52 正义联盟</p></li>
+							<li class="a6"><img src="images/shandian.png"><p>新52 闪电侠</p></li>
+							<li class="a7"><img src="images/dark.png"><p>黑暗之夜—金属 下</p></li>
+							<li class="a8"><img src="images/bianfu2.png"><p>蝙蝠侠</p></li>
+						</ul>
+					 </div></li>
+				 <li class="L1">电影<div class="DY">
+					 <ul>
+					   <li><img src="images/AM.PNG"></li>
+					   <li><img src="images/B6.jpg"></li>
+					   <li><img src="images/B7.PNG"></li>
+					   <li><img src="images/bathman.PNG"></li>
+					   <li><img src="images/JSL.PNG"></li>
+					   <li><img src="images/MOS.PNG"></li>
+					   <li><img src="images/WWMPNG.PNG"></li>
+					   <li><img src="images/GL.PNG"></li>
+					 </ul>
+					 </div></li>
+				</ul>
+			</div>
+			
+		</nav>
+		<section>
+			 <p class="shake">欢迎!</p>
+			 <h4>Sunday电影社专注于最新最快的电影快讯分享，<br/>不定期更新经典电影与最新热映影片的解读与分析，<br />还有电影资源以及美漫美剧分享。</h4>
+			<img src="images/BG.png" class="BG1">
+		</section>
+		<div class="wenzhang">
+		   <div class="head"><h3>文章</h3></div>
+			<div class="D1">
+				<a href="https://www.bilibili.com/read/cv1842663">
+			 <img src="images/B1.PNG">
+				<h4> 老虚笔下出了一个史上最弱基多拉</h4>
+				</a>
+				<hr/>
+		</div>
+			<div class="D1">
+				<a href="https://www.bilibili.com/read/cv1511751">
+			 <img src="images/B2.PNG">
+				<h4>《犬舍》一 老头是英雄，少年是反派</h4>
+				</a>
+				<hr/>
+		</div>
+			<div class="D1">
+				<a href="https://www.bilibili.com/read/cv1422860">
+			 <img src="images/B3.PNG">
+				<h4>金庸：他日江湖见，再当把酒言欢</h4>
+				</a>
+				<hr/>
+		</div>
+			<div class="D1">
+				<a href="https://www.bilibili.com/read/cv1398601">
+			 <img src="images/B4.PNG">
+				<h4>在《影》的世界里谁是蝉，谁是螳螂，谁又是那只麻雀？</h4>
+				</a>
+				<hr/>
+		</div>
+		</div>
+			<div class="IMG">
+				<h1>DC</h1>
+				<h2>超级英雄大集结！</h2>
+			    <img src="images/6633.png">
+			</div>
+			<div class="blibli">
+			   <img src="images/blibli.PNG">
+				<div class="conter">
+				  <img src="images/微信图片_20190118094731.jpg">
+				  <h4>性感美女荷官在线发牌啊</h4>
+				</div>
+			</div>
+			<div class="jrtt">
+			   <img src="images/toutiao.PNG">
+				<div class="conter">
+				  <img src="images/b72800039f70fd43e72c.jpg">
+					<h4>sunday电影社</h4>
+				</div>
+				<div class="poin">
+				    <img src="images/ffee000006397fc4f70a.jpg">
+				</div>
+			</div>
+			<div class="txkfpt">
+			   <img src="images/tengxun2.PNG">
+				<div class="conter">
+				  <img src="images/10.jpg"><div class="poin"></div></div>
+					<h4>大刘的蘑菇</h4>
+			</div>
+			<div class="famkui">
+				<div class="anav"><h1>原创视频</h1></div>
+			   <div class="avatar"><div><img src="images/f2d469c7ab6b5d4b949be8940d80deadaba0a75a.jpg_380x240.jpg"></div></div>
+			   <div class="avatar"><div><img src="images/49fabcbbd880af038f0bec71f64774322cefb7d6.jpg"></div></div>
+			   <div class="avatar"><div><img src="images/285daa44f6fd0c7ddfd31335f724c2437018daa1.jpg_380x240.jpg"></div></div>
+			   <div class="avatar"><div><img src="images/40d670d6a7a2a971eaf026588bbcde3fa82081e3.jpg_380x240.jpg"></div></div>
+			   <div class="avatar"><div><img src="images/0902855e8b28803b06acc61a5385eee13e6ff08c.jpg_380x240.jpg"></div></div>
+			   <div class="avatar"><div><img src="images/ba676b972bf414a4d9b558a2d842817e3b982e23.jpg_380x240.jpg"></div></div>
+				<div class="avatar"><div><img src="images/b77ac9fd484564d4069664ee78890da80089b4e4.jpg_380x240.jpg"></div></div>
+				<div class="avatar"><div><img src="images/eaee4dc69d94d51b70260b42fb4728ea6d4ec4a7.jpg_380x240.jpg"></div></div>
+				<div class="avatar"><div><img src="images/ea66f583c2eb1c621c00fad7d8c80def841a9968.jpg_380x240.jpg"></div></div>
+			</div>
+			<div class="weixin">
+			   <img src="images/tengxun2.PNG">
+			</div>
+			<div class="poin"><img src="images/0.png">
+			</div>
+		<div class="Emali">
+		   <a onClick="mailsome1()">联系我们<img src="images/email.png"></a>
+		</div>
+		<footer>
+
+		</footer>
+		<script>
+		   function mailsome1() {        var who = prompt("请输入收件人邮箱: ", "1354993395@qq.com");        var what = prompt("输入主题: ", "none");        if (confirm("你确定要向" + who + "发送主题为 " + what + "的邮件么?") == true) {            parent.location.href = 'mailto:' + who + '?subject=' + what + '';        }    }
+			</script>
+	</body>
+</html>
